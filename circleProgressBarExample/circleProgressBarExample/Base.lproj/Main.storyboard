@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="circleProgressBarExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOl-de-cuK">
+                                <rect key="frame" x="112" y="66" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="DJe-H7-hvo"/>
+                                    <constraint firstAttribute="width" constant="150" id="sP9-Ek-7k8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Op-Ho-v3L">
+                                <rect key="frame" x="186" y="310" width="80" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.98591322496653844" blue="0.0016311489175000471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Y1d-11-Qt4"/>
+                                    <constraint firstAttribute="height" constant="34" id="ue2-Kk-LQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="plusBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="brm-9A-k0m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFY-0g-h2t">
+                                <rect key="frame" x="110" y="310" width="80" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.99575888222482911" blue="0.0076825721821567328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7jc-t3-tWN"/>
+                                    <constraint firstAttribute="height" constant="34" id="oTP-mj-pBX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minusBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xb9-AX-PTs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Op-Ho-v3L" firstAttribute="top" secondItem="XOl-de-cuK" secondAttribute="bottom" constant="94" id="1VQ-1i-jng"/>
+                            <constraint firstItem="FFY-0g-h2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="HhB-d5-car"/>
+                            <constraint firstItem="XOl-de-cuK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XB8-Vn-bAL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Op-Ho-v3L" secondAttribute="trailing" constant="109" id="YyT-tw-eGW"/>
+                            <constraint firstItem="FFY-0g-h2t" firstAttribute="top" secondItem="XOl-de-cuK" secondAttribute="bottom" constant="94" id="jmd-SF-k5D"/>
+                            <constraint firstItem="XOl-de-cuK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="p5W-sW-1Zy"/>
+                            <constraint firstItem="FFY-0g-h2t" firstAttribute="top" secondItem="XOl-de-cuK" secondAttribute="bottom" constant="94" id="xZo-xd-mOG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleView" destination="XOl-de-cuK" id="Otk-Mb-ZZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>
