@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     var circleBar = CircleProgressBar()
     @IBOutlet weak var circleView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.circleBar = CircleProgressBar(view: circleView)
