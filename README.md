@@ -2,7 +2,7 @@
 
 * Swift 4
 
-<img src="/img/progresBar.gif" height="300" width="600" />
+<img src="/img/progresBar.gif" height="600" width="300" />
 
 
 # Initialization:
@@ -10,12 +10,14 @@
  * create UIView on storyboard and add like outlet in to your vc class
  <img src="/img/uiview.png" height="300" width="600" />
  * Add class CircleProgressBar instance
+
  ```Swift
  var circleBar = CircleProgressBar()
  @IBOutlet weak var circleView: UIView!
 ```
  * Give your UIView in the initiator
  * Use setUp method in to your viewDidLoad
+
  ```Swift
  override func viewDidLoad() {
      super.viewDidLoad()
